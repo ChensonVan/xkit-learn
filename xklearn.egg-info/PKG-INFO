@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: xklearn
+Version: 0.0.1
+Summary: this is a test package for packing python liberaries tutorial.
+Home-page: http://www.chenson.cc
+Author: Chenson Van
+Author-email: chenson.van@gmail.com
+License: MIT
+Description: # xkit-learn
+Keywords: test python package
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent

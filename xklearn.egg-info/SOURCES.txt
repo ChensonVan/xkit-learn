@@ -1,0 +1,15 @@
+README.md
+setup.py
+xklearn/__init__.py
+xklearn.egg-info/PKG-INFO
+xklearn.egg-info/SOURCES.txt
+xklearn.egg-info/dependency_links.txt
+xklearn.egg-info/top_level.txt
+xklearn.egg-info/zip-safe
+xklearn/estimators/__init__.py
+xklearn/estimators/tmp.py
+xklearn/estimators/tensor_fm/__init__.py
+xklearn/estimators/tensor_fm/tensor_fm.py
+xklearn/estimators/tensor_fm/tmp.py
+xklearn/utils/__init__.py
+xklearn/utils/tensor_tools.py
