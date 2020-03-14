@@ -1,3 +1,5 @@
+import pandas as pd
+import numpy as np
 import tensorflow as tf
 from sklearn.base import BaseEstimator, RegressorMixin, ClassifierMixin
 from sklearn.preprocessing import LabelBinarizer
@@ -9,6 +11,8 @@ from sklearn.utils.validation import (check_is_fitted, FLOAT_DTYPES, column_or_1
 from functools import partial
 
 from tensorflow.python.framework.errors_impl import (InvalidArgumentError as TensFlowInvalidArgumentError)
+
+from ...utils.tensor_tools import to_tf_dataset, to_tf_tensor
 
 
 def l1_norm(W, V, lambda_=0.001):
@@ -79,7 +83,10 @@ def train(train_dataset, num_factors=2, max_iter=1,
     :return:
     """
     
-    tf.random.set_seed(random_state)
+    try:
+        tf.random.set_seed(random_state)
+    except:
+        tf.set_random_seed(random_state)
     
     if C < 0:
         raise ValueError(f'Inverse regularization term must be positive; got (C={C})')
