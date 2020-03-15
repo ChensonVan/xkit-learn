@@ -11,8 +11,7 @@ from .categorical_encoder import CateBinEncoder
 
 class BinEncoder(BaseEstimator, TransformerMixin):
     """
-    将连续型变量转化为离散型（分箱）
-    仅适用于cont， 支持缺失值
+    将给定特征转化为离散型/分箱，支持缺失值
     """
     def __init__(self, diff_thr=20, num_of_bins=10, method='dt', cate_f=True, inplace=True, suffix='_bin', **kwargs):
         self.diff_thr = diff_thr
